@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/ESTYLES/style.css" />
+  <style>
+    body {
+      font-family: 'Fredericka the Great', cursive;
+      background-color: #ffffff; 
+    }
+  </style>
+</head>
+
+<body class="text-black"> 
+
+  <div class="min-h-screen flex flex-col relative z-10">
+
+     <nav class="nav p-4 flex justify-between items-center text-white border-b-4 border-orange-500 bg-[#1c1b1b]">
+  <div class="logo-container flex items-center gap-4">
+    <img src="/IMAGES/final final logo.png" alt="Logo Mototech" class="h-10" />
+    <h1 class="text-xl font-bold" split-by="letter">Contáctanos</h1>
+  </div>
+  <div class="flex space-x-6">
+    <a href="/index.html" class="hover:text-orange-400 font-bold first-letter-orange">Inicio</a>
+    <a href="/PAGES/catalogo.html" class="hover:text-orange-400 font-bold first-letter-orange">Catálogo</a>
+    <a href="/PAGES/repuestos.html" class="hover:text-orange-400 font-bold first-letter-orange">Repuestos</a>
+    <a href="/PAGES/contacto.html" class="hover:text-orange-400 font-bold first-letter-orange">Contacto</a>
+  </div>
+</nav>
+
+    <main class="flex-grow max-w-7xl mx-auto p-6 w-full">
+
+      <section class="flex flex-col md:flex-row items-stretch justify-between gap-8 mt-12">
+
+        <div class="hidden md:flex flex-col gap-6 w-1/4">
+          <div>
+            <h3 class="text-center text-[#f26e04] font-bold mb-2">Cliente 1 </h3>
+            <img src="/IMAGES/cl4.jpg" alt="Cliente 1"
+                 class="rounded shadow-lg border-4 border-[#f26e04] w-full h-64 object-cover" />
+          </div>
+          <div>
+            <h3 class="text-center text-[#f26e04] font-bold mb-2">cliente 2 </h3>
+            <img src="/IMAGES/cl2.png" alt="Cliente 2"
+                 class="rounded shadow-lg border-4 border-[#f26e04] w-full h-64 object-cover" />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <form id="contactForm"
+            class="p-6 space-y-5 text-black bg-transparent border border-[#f26e04] rounded"
+            autocomplete="off">
+            <h1 class="text-3xl font-bold mb-6 text-[#f26e04] text-center">Formulario de Contacto</h1>
+
+            <input type="text" id="nombre" placeholder="Nombre"
+              class="block w-full p-3 rounded bg-transparent border border-[#f26e04] placeholder-black" required />
+            <input type="text" id="apellido" placeholder="Apellido"
+              class="block w-full p-3 rounded bg-transparent border border-[#f26e04] placeholder-black" required />
+            <input type="email" id="correo" placeholder="Correo"
+              class="block w-full p-3 rounded bg-transparent border border-[#f26e04] placeholder-black" required />
+            <input type="text" id="direccion" placeholder="Dirección"
+              class="block w-full p-3 rounded bg-transparent border border-[#f26e04] placeholder-black" required />
+            <textarea id="mensaje" placeholder="Mensaje" rows="4"
+              class="block w-full p-3 rounded bg-transparent border border-[#f26e04] placeholder-black" required></textarea>
+
+            <button id="botonImprimir" type="button"
+              class="bg-[#f26e04] hover:bg-[#d15800] text-white px-6 py-3 rounded font-bold w-full transition-colors duration-300">
+              Enviar
+            </button>
+
+            <div id="imprimir" class="pt-4 text-black font-semibold"></div>
+          </form>
+        </div>
+
+        <div class="hidden md:flex flex-col gap-6 w-1/4">
+          <div>
+            <h3 class="text-center text-[#f26e04] font-bold mb-2">Cliente 3</h3>
+            <img src="/IMAGES/cliente1.png" alt="Cliente 3"
+                 class="rounded shadow-lg border-4 border-[#f26e04] w-full h-64 object-cover" />
+          </div>
+          <div>
+            <h3 class="text-center text-[#f26e04] font-bold mb-2">Cliente 4</h3>
+            <img src="/IMAGES/cl3.png" alt="Cliente 4"
+                 class="rounded shadow-lg border-4 border-[ #000000] w-full h-64 object-cover" />
+          </div>
+        </div>
+
+      </section>
+
+      <section class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 mt-16">
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-bold text-[#f26e04] mb-5 border-b-4 border-[#f26e04] inline-block pb-2">
+            Desde el inicio contigo
+          </h2>
+          <div class="w-full h-64 rounded overflow-hidden shadow-lg border-4 border-[#f26e04] bg-[#f26e04]">
+            <img src="/IMAGES/Moto BlancoN.jpeg" alt="Imagen de contacto"
+              class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-bold text-[#f26e04] mb-5 border-b-4 border-[#f26e04] inline-block pb-2">
+            La más vendida del año
+          </h2>
+          <div class="w-full h-64 rounded overflow-hidden shadow-lg border-4 border-[#f26e04]">
+            <iframe class="w-full h-full"
+              src="https://www.youtube.com/embed/aRry6y-X-Ac"
+              title="Video de YouTube" frameborder="0"
+              allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-6 text-center text-black rounded mt-12 max-w-xl mx-auto">
+        <h2 class="text-2xl font-bold mb-3 text-[#f26e04]">Nuestra Ubicación</h2>
+        <p class="mb-6">Nos encuentras aquí, no te puedes perder.</p>
+        <iframe class="w-full h-64 rounded border-4 border-[#f26e04]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6517372777583!2d-78.5008734!3d-0.2275191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5998d2298ce15%3A0xd4d5bf5a2c231ef9!2sInstituto%20Tecnol%C3%B3gico%20Universitario%20Quito%20Metropolitano!5e0!3m2!1ses-419!2sec!4v1720091907000!5m2!1ses-419!2sec"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    </main>
+
+    <footer class="bg-[#1c1b1b] text-center py-4 text-[#f9f4e9]">
+    <p>&copy; 2025 MOTORCLAS</p>
+  </footer>
+  </div>
+
+  <script src="/js/funcionable.js"></script>
+  <script src="/js/animacion.js"></script>
+</body>
+</html>

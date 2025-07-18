@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro de Compra de Moto</title>
+  <link rel="stylesheet" href="/ESTYLES/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <form id="registroCompraMotoForm" autocomplete="off">
+    <h2 style="color: #f26e04; text-align: center;">Registro de Compra</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="text" id="apellido" placeholder="Apellido" required />
+    <input type="email" id="correo" placeholder="Correo" required />
+    <input type="text" id="direccion" placeholder="Dirección de entrega" required />
+    <input type="number" id="cantidad" placeholder="Cantidad" min="1" required />
+    <input type="text" id="sc" placeholder="Soltero/Casado" required />
+    <input type="text" id="razonSocial" placeholder="Razón Social" required />
+    <input type="text" id="calle" placeholder="Calle" required />
+    <input type="text" id="codigoPostal" placeholder="Código Postal" required />
+    <textarea id="comentarios" placeholder="Comentarios adicionales"></textarea>
+
+    <button id="botonImprimir" type="button">Registrar Compra</button>
+  </form>
+
+  <div id="mensajeConfirmacion"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+  <script src="/js/compra.js"></script>
+
+</body>
+</html>
